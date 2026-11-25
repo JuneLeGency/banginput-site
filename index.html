@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f9fc">
+  <meta name="description" content="认识 BangInput 输入法。全拼与九宫格、Rime 输入方案、离线流式语音、AI 写作、Bitwarden 密码管理，以及由你控制的本地与云端能力。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:title" content="BangInput 输入法 · 从打字到写作">
+  <meta property="og:description" content="中文输入、离线语音、AI 文本工具和密码管理，放进每天使用的键盘。">
+  <meta property="og:url" content="https://junelegency.github.io/banginput-site/">
+  <meta property="og:image" content="https://junelegency.github.io/banginput-site/assets/social-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://junelegency.github.io/banginput-site/">
+  <link rel="icon" type="image/png" href="assets/banginput-icon.png">
+  <link rel="preload" href="assets/geist-regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <title>BangInput 输入法 · 从打字到写作</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"BangInput 输入法","applicationCategory":"UtilitiesApplication","operatingSystem":"Android 8.0 及以上（ARM64）","softwareVersion":"0.7.99","url":"https://junelegency.github.io/banginput-site/","description":"支持中文输入、离线语音、可选 AI 和兼容 Bitwarden 密码管理的 Android 输入法。"}</script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="BangInput 首页"><img src="assets/banginput-icon.png" width="38" height="38" alt=""><span>BangInput<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" aria-label="打开导航"><span></span><span></span></button>
+      <nav id="navigation" aria-label="主导航">
+        <a href="#input">输入体验</a><a href="#voice">语音与 AI</a><a href="#passwords">密码管理</a><a href="#privacy">隐私</a>
+        <a class="nav-cta" href="#start">开始体验 <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Android 输入法 · 端侧优先</p>
+        <h1 id="hero-title">一个键盘，<br>从打字到<span class="accent-word">写作<span class="accent-spark" aria-hidden="true">✳</span></span>。</h1>
+        <p class="hero-description">中文输入、离线语音、AI 文本工具和密码管理。<br class="desktop-break">把每天用得到的能力，放进熟悉的键盘。</p>
+        <div class="hero-actions"><a class="button primary" href="#start">体验 BangInput <span aria-hidden="true">↗</span></a><a class="text-link" href="#capabilities">看看它能做什么 <span aria-hidden="true">↓</span></a></div>
+        <div class="hero-meta"><img src="assets/banginput-icon.png" alt="" width="28" height="28"><p><strong>BangInput / 拾语输入法</strong><span>Android 8.0+ · ARM64 · 开发体验版</span></p></div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit-label orbit-top"><span class="mini-dot blue"></span> 中文 · 拼音 / 九宫格 / Rime</div>
+        <div class="phone" aria-label="BangInput 交互示意">
+          <div class="phone-top"><span>9:41</span><div class="camera" aria-hidden="true"></div><span class="phone-status" aria-hidden="true">▮▮▮ ▰</span></div>
+          <div class="demo-document"><div class="document-heading"><span class="document-mark" aria-hidden="true">▤</span><span>随手记录</span><span class="document-menu" aria-hidden="true">···</span></div><span class="document-date">周末计划</span><p id="demo-text" aria-live="polite">周末一起出去走走吧<span class="caret" aria-hidden="true"></span></p><p class="demo-secondary" id="demo-secondary">想到的，顺手记下来。</p></div>
+          <div class="keyboard-preview" id="keyboard-preview">
+            <div class="preview-compose"><span id="demo-code">yi qi chu qu</span><span aria-hidden="true">⌄</span></div>
+            <div class="preview-candidates"><strong id="demo-candidate">一起出去</strong><span>一起</span><span>出去</span><span class="candidate-tools" aria-hidden="true">▦</span></div>
+            <div class="preview-keys" aria-hidden="true"><div class="key-row"> <span>Q</span><span>W</span><span>E</span><span>R</span><span>T</span><span>Y</span><span>U</span><span>I</span><span>O</span><span>P</span></div><div class="key-row row-middle"><span>A</span><span>S</span><span>D</span><span>F</span><span>G</span><span>H</span><span>J</span><span>K</span><span>L</span></div><div class="key-row"><span class="functional">⇧</span><span>Z</span><span>X</span><span>C</span><span>V</span><span>B</span><span>N</span><span>M</span><span class="functional">⌫</span></div><div class="key-row last-row"><span class="functional">?123</span><span>中 / A</span><span class="space-key">BangInput</span><span>。</span><span class="enter-key">↵</span></div></div>
+            <div class="preview-bottom"><span>◉</span><span>输入方式</span><span>剪贴板</span><span>☺</span><span>⌄</span></div>
+          </div>
+          <div class="voice-preview" id="voice-preview" hidden><span class="listening-label"><span class="status-dot"></span> 离线流式识别示意</span><div class="waveform" aria-hidden="true"></div><p>说话的同时，看见文字。</p><button type="button" id="play-voice" class="demo-action">重播语音示例 ↻</button></div>
+          <div class="ai-preview" id="ai-preview" hidden><div class="ai-preview-heading">✳ AI 文本工具</div><p class="original-copy">原文<br><span>周五之前把方案给我</span></p><p class="rewritten-copy" id="rewritten-copy">方便在周五前把方案发给我吗？</p><div class="tone-buttons" aria-label="改写示例风格"><button type="button" data-tone="polite" aria-pressed="true">礼貌一点</button><button type="button" data-tone="concise" aria-pressed="false">简洁一点</button></div></div>
+          <div class="phone-home" aria-hidden="true"></div>
+        </div>
+        <div class="orbit-label orbit-bottom"><span class="mini-dot orange"></span> 模型按需下载，联网由你选择</div>
+        <div class="demo-controls" role="group" aria-label="切换功能示意"><button type="button" data-demo="typing" aria-pressed="true">拼音输入</button><button type="button" data-demo="voice" aria-pressed="false">离线语音</button><button type="button" data-demo="ai" aria-pressed="false">AI 改写</button></div>
+        <p class="demo-caption">功能示意 · 使用预设文本，不调用麦克风或 AI 服务</p>
+      </div>
+    </section>
+
+    <section class="capability-strip" id="capabilities" aria-label="主要能力"><div class="container strip-inner"><span>全拼 / 九宫格</span><span>离线流式语音</span><span>端侧与云端 AI</span><span>Bitwarden 兼容</span><span>本地隐私控制</span></div></section>
+
+    <section class="section container input-section" id="input" aria-labelledby="input-title">
+      <div class="section-heading"><div><p class="eyebrow">先把输入，做好</p><h2 id="input-title">熟悉的输入方式，<br>更顺手的细节。</h2></div><p>从日常聊天到长句输入，让候选、纠错和光标操作跟得上你的习惯。</p></div>
+      <div class="input-grid">
+        <article class="feature-card input-main"><div><span class="feature-icon text-icon">拼</span><h3>按自己的习惯打字</h3><p>全拼、简拼与全拼混输，全键盘和 T9 九宫格随时切换。Rime 引擎提供双拼、五笔、注音等方案。</p></div><div class="input-sample"><span class="sample-code">jin tian tian qi bu cuo</span><div><strong>今天天气不错</strong><span>今天</span><span>天气</span></div></div><div class="scheme-tags"><span>全拼</span><span>九宫格</span><span>双拼 / Rime</span><span>五笔 / 注音</span></div></article>
+        <article class="feature-card correction-card"><span class="feature-icon">↶</span><h3>纠错看得见，也能撤回</h3><p>邻键修复、错拼与模糊音处理，配合编码标记和撤销入口。长句可分词、逐字上屏，也可以回到编码中间继续编辑。</p><div class="correction-sample" aria-label="临近按键纠错示意"><span>sh<span class="typo">w</span>ji</span><span class="correction-arrow" aria-hidden="true">→</span><span>sheji</span><strong>设计</strong></div></article>
+        <article class="feature-card dictionary-card"><span class="feature-icon">Aa</span><h3>常用词，越用越顺</h3><p>整句候选排序、用户词学习与中英混输。领域词包可按需下载或导入，专业词和常用表达也有自己的位置。</p><div class="dictionary-lines"><span>产品经理 <small>领域词</small></span><span>周末去看展 <small>常用表达</small></span><span>review 一下方案 <small>中英混输</small></span></div></article>
+      </div>
+    </section>
+
+    <section class="section voice-section" id="voice" aria-labelledby="voice-title"><div class="container voice-layout"><div class="voice-copy"><p class="eyebrow">把想法说出来</p><h2 id="voice-title">有些话，<br>说出来更快。</h2><p>支持设备本地语音识别，流式模型边说边出字，整句模型在录音结束后识别。X-ASR、SenseVoice 等模型可以按场景选择。</p><ul class="check-list"><li>下载离线模型后，在设备上完成识别</li><li>标点、数字格式与口语填充词可调</li><li>内置评测入口，按自己的设备比较效果</li></ul><p class="feature-note">流式能力取决于所选模型。模型大小、速度和识别效果也会因设备与语言而不同。</p></div><div class="voice-art"><div class="voice-art-top"><span class="local-badge"><span class="mini-dot blue"></span> 设备本地</span><span>流式识别示意</span></div><div class="large-waveform" aria-hidden="true"></div><p>明天下午三点开项目会，<br><strong>记得带上电脑。</strong></p><div class="voice-art-bottom"><span>中文标点</span><span>数字格式</span><span>中英混说</span></div></div></div></section>
+
+    <section class="section container ai-section" id="ai" aria-labelledby="ai-title"><div class="section-heading"><div><p class="eyebrow">写完之后，也能接着帮忙</p><h2 id="ai-title">想清楚了，<br>再写得更到位。</h2></div><p>在键盘里校对、润色、翻译或组织回复。处理结果由你确认，再放回正在使用的输入框。</p></div><div class="ai-grid"><article class="ai-example"><div class="ai-example-top"><span>✳ 语气改写示意</span><span>日常沟通</span></div><p class="before-text">「这个方案不行，重新做一下。」</p><div class="rewrite-divider"><span aria-hidden="true">↓</span> 礼貌一些</div><p class="after-text">这个方案还有一些可以调整的地方，方便再完善一版吗？</p><div class="ai-example-tags"><span>校对</span><span>润色</span><span>翻译</span><span>回复</span></div></article><div class="ai-options"><article><span class="option-mark">↳</span><div><h3>端侧模型，按需使用</h3><p>可下载本地语言模型，探索离线续写与文本处理。可用任务和体验取决于选择的模型与设备。</p></div></article><article><span class="option-mark">↗</span><div><h3>云端服务，自行配置</h3><p>支持 OpenAI 兼容接口等配置。启用前明确说明发送的数据，服务地址和访问密钥由你管理。</p></div></article><a class="text-link" href="#privacy">了解数据如何处理 <span aria-hidden="true">↗</span></a></div></div></section>
+
+    <section class="section password-section" id="passwords" aria-labelledby="password-title"><div class="container password-layout"><div class="vault-art"><div class="vault-header"><span class="vault-symbol" aria-hidden="true">⌘</span><span>密码库</span><span class="vault-demo-tag">演示账号</span></div><div class="vault-search">⌕ <span>搜索名称、账号或网址</span></div><div class="vault-entry"><span class="vault-avatar">E</span><div><strong>Example 工作账号</strong><span>demo@example.test</span></div><span aria-hidden="true">↗</span></div><div class="vault-choice"><span>填入账号和密码</span><span aria-hidden="true">✓</span></div><div class="vault-toolbar"><span>密码建议</span><span>剪贴板历史</span><span class="vault-close" aria-hidden="true">×</span></div></div><div class="password-copy"><p class="eyebrow">输入密码，也要顺手</p><h2 id="password-title">你的密码库，<br>就在键盘旁。</h2><p>内置兼容 Bitwarden 的账号登录、同步、搜索与登录项管理。支持官方美国区、欧洲区，以及自建 HTTPS 服务器。</p><ul class="check-list"><li>从密码候选选择账号，通过系统自动填充或键盘填入</li><li>新增或更新登录项前，核对账号信息并确认保存</li><li>不想使用密码建议时，点关闭，或直接打开剪贴板历史</li><li>支持离线解锁与可选的系统生物识别解锁</li></ul><p class="feature-note">Bitwarden 登录和同步需要联网，登录项以端到端加密形式同步到你选择的服务器。</p></div></div></section>
+
+    <section class="section container everyday-section" aria-labelledby="everyday-title"><div class="section-heading compact"><div><p class="eyebrow">每天用得到的小工具</p><h2 id="everyday-title">让键盘，适合你的手。</h2></div></div><div class="everyday-grid"><article><span class="everyday-symbol">◐</span><h3>主题与字体</h3><p>明暗模式、多种配色与可选字体，按喜好调整键盘高度、数字行和触感。</p></article><article><span class="everyday-symbol">↔</span><h3>光标与布局</h3><p>空格滑动移光标、触控板模式、单手和悬浮布局；宽屏设备可使用分体键盘。</p></article><article><span class="everyday-symbol">▤</span><h3>剪贴板与表情</h3><p>剪贴板历史、表情、符号与光标编辑面板，常用操作可以从键盘直接进入。</p></article><article><span class="everyday-symbol">⌕</span><h3>T9 应用查找</h3><p>用拼音首字母与数字组合查找应用，快速找到并打开已安装的应用。</p></article></div></section>
+
+    <section class="privacy-section" id="privacy" aria-labelledby="privacy-title"><div class="container"><div class="privacy-heading"><div><p class="eyebrow">能力可以选择，数据去向也要清楚</p><h2 id="privacy-title">常用输入在本机处理。<br>联网能力由你开启。</h2></div><a class="button light" href="https://shiyuime.github.io/privacy/" target="_blank" rel="noopener noreferrer">阅读隐私政策 <span aria-hidden="true">↗</span></a></div><div class="privacy-grid"><article><span>本地处理</span><h3>中文解码与本地学习</h3><p>常用输入能力、用户词典和已下载的离线模型在设备上运行。单机模式可以禁用应用内网络功能。</p></article><article><span>按需联网</span><h3>云 AI、账号同步与下载</h3><p>模型、字体和更新下载会联网；云 AI 和云语音需主动配置并授权，Bitwarden 同步由账号操作触发。</p></article><article><span>敏感输入</span><h3>密码有专门的处理方式</h3><p>密码输入不参与联想与用户词学习，密码管理页面启用系统安全窗口；填入前由你选择所需凭据。</p></article></div></div></section>
+
+    <section class="section container desktop-section" aria-labelledby="desktop-title"><div><p class="eyebrow">从手机，继续向桌面探索</p><h2 id="desktop-title">输入习惯，也可以延续。</h2><p>桌面端正在开发，共享中文解码方向，逐步接入本地模型与系统输入法。当前各平台进度不同。</p></div><div class="platforms"><article><span class="platform-name">Android</span><span class="platform-status ready">持续迭代</span><p>移动端主要体验平台</p></article><article><span class="platform-name">macOS</span><span class="platform-status">原型迭代</span><p>原生输入法与共享解码核心</p></article><article><span class="platform-name">Windows / Linux</span><span class="platform-status">适配中</span><p>桌面前端与构建验证持续推进</p></article></div></section>
+
+    <section class="section container start-section" id="start" aria-labelledby="start-title"><div class="start-intro"><img src="assets/banginput-icon.png" width="64" height="64" alt=""><p class="eyebrow">开始体验</p><h2 id="start-title">下次打字，<br>试试 BangInput。</h2><p>当前 Android 体验版为 v0.7.99。安装包体验与问题反馈，可通过支持邮箱或公开讨论区联系维护者。</p><a class="button primary" href="mailto:miioflee@gmail.com?subject=BangInput%20Android%20%E4%BD%93%E9%AA%8C">联系获取体验版 <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/JuneLeGency/banginput-site/issues" target="_blank" rel="noopener noreferrer">问题与建议 <span aria-hidden="true">↗</span></a></div><ol class="setup-steps"><li><span class="step-number">1</span><div><h3>安装并启用</h3><p>需要 Android 8.0 及以上、ARM64 设备。安装后按应用内指引，在系统设置中启用 BangInput 并选择为当前输入法。</p></div></li><li><span class="step-number">2</span><div><h3>选好自己的输入方式</h3><p>从全拼或九宫格开始，再按习惯调整主题、键盘高度、Rime 方案与常用词包。</p></div></li><li><span class="step-number">3</span><div><h3>按需要，添加更多能力</h3><p>离线语音与端侧 AI 需下载对应模型。密码同步和云服务分别在设置中主动开启与配置。</p></div></li></ol></section>
+
+    <section class="section container faq-section" aria-labelledby="faq-title"><div><p class="eyebrow">使用前，先了解</p><h2 id="faq-title">你可能还想知道。</h2></div><div class="faq-list"><details><summary>离线功能第一次使用，需要下载吗？<span aria-hidden="true">+</span></summary><p>中文键盘可以直接开始使用。离线语音和端侧语言模型需要先下载对应资产，下载完成后可在本机使用。不同模型占用的存储和内存不同，建议按设备能力与实际需求选择。</p></details><details><summary>输入内容会自动发送到云端吗？<span aria-hidden="true">+</span></summary><p>中文解码与本地输入学习在设备上完成。可选云 AI 和云语音需配置并明确同意后启用，使用时会向所选服务发送完成任务所需的数据。模型下载、更新和 Bitwarden 同步也有各自的网络请求，完整说明见隐私政策。</p></details><details><summary>所有语音模型都支持边说边出字吗？<span aria-hidden="true">+</span></summary><p>流式模型支持录音过程中的实时识别，整句模型通常在录音结束后给出结果。模型详情和应用内评测可帮助判断它是否适合你的语言、设备与使用场景。</p></details><details><summary>可以使用自己的 Bitwarden 服务器吗？<span aria-hidden="true">+</span></summary><p>内置客户端提供官方美国区、欧洲区与自建服务器选项，自建入口使用 HTTPS。系统自动填充需要在 Android 设置中选择相应服务；也可以使用键盘中的密码候选入口。</p></details><details><summary>不想使用密码建议，还能打开剪贴板吗？<span aria-hidden="true">+</span></summary><p>可以。密码建议条和 Bitwarden 键盘面板提供关闭与剪贴板历史入口。关闭后恢复普通工具栏，当前输入框中后续刷新的密码建议会继续保持收起，主动打开密码库后可再次使用。</p></details><details><summary>桌面版与 Android 版的功能相同吗？<span aria-hidden="true">+</span></summary><p>桌面端正在开发，平台进度与系统集成方式不同。本站以 Android 体验版的能力为主，macOS、Windows 和 Linux 的状态会随验证进展更新。</p></details></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-top"><a class="brand" href="#"><img src="assets/banginput-icon.png" width="32" height="32" alt=""><span>BangInput<span class="brand-dot">.</span></span></a><p>中文输入 · 离线语音 · AI 文本工具</p><div><a href="https://shiyuime.github.io/privacy/" target="_blank" rel="noopener noreferrer">隐私政策</a><a href="https://github.com/JuneLeGency/banginput-site" target="_blank" rel="noopener noreferrer">网站源码 ↗</a><a href="mailto:miioflee@gmail.com">联系维护者</a></div></div><div class="container footer-bottom"><span>© 2026 BangInput · 拾语输入法</span><p>基于 librime、sherpa-onnx、llama.cpp 等开源组件构建。</p><p>本站交互为本地预设示意 · 能力核对于 2026.11.26</p></div></footer>
+</body>
+</html>
